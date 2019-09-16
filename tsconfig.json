@@ -15,7 +15,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nxrepo/lib1": ["libs/lib1/src/index.ts"],
+      "@nxrepo/common/lib2": ["libs/common/lib2/src/index.ts"],
+      "@nxrepo/common-lib3": ["libs/common/lib3/src/index.ts"],
+      "@nxrepo/lib4": ["libs/common/lib4/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

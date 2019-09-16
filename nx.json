@@ -13,6 +13,18 @@
     },
     "test-app": {
       "tags": []
+    },
+    "lib1": {
+      "tags": []
+    },
+    "common-lib2": {
+      "tags": []
+    },
+    "common-lib3": {
+      "tags": []
+    },
+    "common-lib4": {
+      "tags": []
     }
   }
 }

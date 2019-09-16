@@ -119,6 +119,142 @@
           }
         }
       }
+    },
+    "lib1": {
+      "projectType": "library",
+      "root": "libs/lib1",
+      "sourceRoot": "libs/lib1/src",
+      "prefix": "nxrepo",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/lib1/tsconfig.lib.json",
+            "project": "libs/lib1/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/lib1/tsconfig.lib.json",
+              "libs/lib1/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/lib1/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/lib1/jest.config.js",
+            "tsConfig": "libs/lib1/tsconfig.spec.json",
+            "setupFile": "libs/lib1/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "common-lib2": {
+      "projectType": "library",
+      "root": "libs/common/lib2",
+      "sourceRoot": "libs/common/lib2/src",
+      "prefix": "nxrepo",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/common/lib2/tsconfig.lib.json",
+            "project": "libs/common/lib2/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/lib2/tsconfig.lib.json",
+              "libs/common/lib2/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common/lib2/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/lib2/jest.config.js",
+            "tsConfig": "libs/common/lib2/tsconfig.spec.json",
+            "setupFile": "libs/common/lib2/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "common-lib3": {
+      "projectType": "library",
+      "root": "libs/common/lib3",
+      "sourceRoot": "libs/common/lib3/src",
+      "prefix": "nxrepo",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/common/lib3/tsconfig.lib.json",
+            "project": "libs/common/lib3/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/lib3/tsconfig.lib.json",
+              "libs/common/lib3/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common/lib3/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/lib3/jest.config.js",
+            "tsConfig": "libs/common/lib3/tsconfig.spec.json",
+            "setupFile": "libs/common/lib3/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "common-lib4": {
+      "projectType": "library",
+      "root": "libs/common/lib4",
+      "sourceRoot": "libs/common/lib4/src",
+      "prefix": "nxrepo",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/common/lib4/tsconfig.lib.json",
+            "project": "libs/common/lib4/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/lib4/tsconfig.lib.json",
+              "libs/common/lib4/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common/lib4/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/lib4/jest.config.js",
+            "tsConfig": "libs/common/lib4/tsconfig.spec.json",
+            "setupFile": "libs/common/lib4/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {
